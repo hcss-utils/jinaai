@@ -1,3 +1,4 @@
+  
 __copyright__ = "Copyright (c) 2021 Jina AI Limited. All rights reserved."
 __license__ = "Apache-2.0"
 
@@ -13,7 +14,7 @@ MAX_DOCS = int(os.environ.get('JINA_MAX_DOCS', 10000))
 
 def config(dataset: str):
     if dataset == 'toy':
-        os.environ['JINA_DATA_FILE'] = os.environ.get('JINA_DATA_FILE', 'data/input.txt')
+        os.environ['JINA_DATA_FILE'] = os.environ.get('JINA_DATA_FILE', 'data/toy-input.txt')
     elif dataset == 'full':
         os.environ['JINA_DATA_FILE'] = os.environ.get('JINA_DATA_FILE', 'data/input.txt')
     os.environ['JINA_PORT'] = os.environ.get('JINA_PORT', str(45678))
